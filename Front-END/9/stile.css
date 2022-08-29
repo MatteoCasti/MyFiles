@@ -1,0 +1,42 @@
+
+
+
+form{
+    text-align: left;
+}
+th{
+    width: 450px;
+    
+}
+input{
+    position: absolute;
+    left: 150px;
+}
+hr{
+    width: 0px;
+}
+ul{
+    
+    text-align: top;
+    
+}
+#colonne{
+    column-count: 2;
+}
+div{
+    text-align: center;
+}
+#colonne{
+    height: 200px;
+    
+}
+
+.ricerca{
+    position:absolute;
+    left:10px;
+}
+#resultSearch{
+    list-style-position: outside;
+    position: absolute;
+    left: 900px;
+}

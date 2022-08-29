@@ -1,0 +1,55 @@
+#conv{
+    height:80px;
+    background-color: red;
+    color:white;
+    padding: 0 px;
+    margin: 0 px;
+    text-align : center;
+    vertical-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 80px;
+    border: 0px;
+}
+#co{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#val{
+    text-align : center;
+    font-weight: bolder;
+}
+
+.bottone{
+    
+    text-align: center;
+}
+.primo{
+    position: relative;
+    left: 300px;
+    
+    
+}
+.terzo{
+    position: relative;
+    left: 300px;
+    
+    
+}
+.secondo{
+    position: relative;
+    left: 700px;
+    
+}
+.quarto{
+    
+    position: relative;
+    left: 796px;
+    
+}
+hr{
+    
+    height: 2px;
+    background-color: black;
+}

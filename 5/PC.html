@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Calcola prezzo PC</title>
+		
+		<script>
+			
+			function calcola(form) {
+				 console.log('Sono dentro alla funzione');
+				 console.log(form.processore.value);
+				 console.log(form.memoria.value+": "+form.quantitaMemoria+" GB");
+				 console.log(form.ram.value+": "+form.quantitaRam+" GB");
+				
+				// var sto dichiarando una variabile. Di che tipo? Boh?
+				var processore = form.processore.value;
+				var memoria = form.memoria.value;
+				var quantitaMemoria = form.quantitaMemoria.value;
+				var ram = form.ram.value;
+				var quantitaRam=form.quantitaRam.value;
+				
+				var ris=250;
+				
+				if (processore == "i3"){
+					ris=200;
+				}else if(processore=="i5"){
+					ris=350;
+				}else if(processore=="i7"){
+					ris=450;
+				}
+				
+				if (ram == "ddr3"){
+					ris+=quantitaRam*10;
+				}else if(processore=="ddr4"){
+					ris+=quantitaRam*15;
+				}else
+					ris+=quantitaRam*12;
+					
+				if (memoria == "hdd"){
+					ris+=quantitaMemoria*0.02;
+				}else if(memoria=="emmc"){
+					ris+=quantitaMemoria*0.1;
+				}else if(processore=="ssd"){
+					ris+=quantitaMemoria*0.2;
+				}else
+					ris+=quantitaMemoria*0.05;
+				
+				
+				// console.log(document.getElementById('prezzo'));				
+				
+				var output = document.getElementById('prezzo');
+				
+				// Il contenuto di un paragrafo non è il suo value
+				// ma il suo innerHTML
+				output.innerHTML = 'Il costo del tuo biglietto è ' + ris + ' €';
+			}
+		</script>
+		
+	</head>
+	<body>
+		<form>
+			<h1>Calcolatore Prezzi Pc</h1>
+			<p>Quantita Memoria</p>
+			<input type="number" name="quantitaMemoria">
+			<p>Quantita RAM:</p>
+			<input type="nmber" name="quantitaRam">
+			
+			<p>Processore:</p>
+			<input type="radio" value="i3" name="processore"> I3
+			<input type="radio" value="i5"name="processore"> I5
+			<input type="radio" value="i7"name="processore"> I7
+			<input type="radio" value="altro"name="processore"> altro
+			<br><br>
+			
+			<p>Tipo Ram:</p>
+			<input type="radio" value="ddr3" name="ram"> DDR3
+			<input type="radio" value="ddr4"name="ram"> DDR4
+			<input type="radio" value="altro"name="ram"> altro
+			<br><br>
+			
+			<p>Memoria:</p>
+			<input type="radio" value="hdd" name="memoria"> HDD
+			<input type="radio" value="emmc"name="memoria"> EMMC
+			<input type="radio" value="ssd"name="memoria"> SSD
+			<input type="radio" value="altro"name="memoria"> altro
+			<br><br>
+			
+			
+			<button type="button" onclick="calcola(form)">Calcola</button>
+			
+			<p id="prezzo">Premere Calcola per conoscere il prezzo del PC</p>
+		</form>
+	</body>
+</html>

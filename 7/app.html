@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="logica.js" defer></script>
+</head>
+<body>
+    <form onsubmit="aggiungi(this);event.preventDefault();">
+    
+        <input type="text" name="prodotto" placeholder="Prodotto...">
+        <br><br>
+        <input type="text" name="categoria" placeholder="Categoria...">
+        <br><br>
+        <button>Aggiungi</button>
+    </form>
+
+    <p>
+        Lista Spesa
+    </p>
+    <form id="lista">
+
+    </form>
+    <p>
+        Acquistati
+    </p>
+    <ol id ="acquistati">
+
+    </ol>
+</body>
+</html>

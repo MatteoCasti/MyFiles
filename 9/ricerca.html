@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stile.css" />
+    <script src="logica.js" defer></script>
+</head>
+<body>
+    <div>
+        <div>Negozio PC</div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Inserisci dati PC</th>
+                    <th>Lista PC</th>
+                    <th>Risultato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="1">
+                        <form onsubmit="memorizzaPc(this);event.preventDefault();">
+                            <br>
+                            <label>Nome   </label><input class="input" type="text" name="nome" placeholder="Nome..." ><br>
+                            <hr>
+                            <label>Marca   </label><input class="input" type="text" name="marca" placeholder="Marca..."><br>
+                            <hr>
+                            <label>Processore   </label><input class="input" type="text" name="processore" placeholder="Processore..."><br>
+                            <hr>
+                            <label>Ram   </label><input class="input" type="number" name="ram" placeholder="Ram..."><br>
+                            <hr>
+                            <label>Tipo Ram   </label><input class="input" type="text" name="tipoRam" placeholder="Tipo Ram..."><br>
+                            <hr>
+                            <label>Memoria   </label><input class="input" type="number" name="memoria" placeholder="Memoria..."><br>
+                            <hr>
+                            <label>Tipo Memoria   </label><input class="input" type="text" name="tipoMemoria" placeholder="Tipo Memoria..."><br><br>
+                            <button>Carica</button>
+                        </form>
+                    </th>
+                    <th>
+                        
+                            
+                            <ul id="pcs">
+                                
+
+                            </ul>
+                        
+                    
+                    </th>
+                    <th id="3">
+                        
+                            <ul id="risultato">
+                                
+
+                            </ul>
+                        
+                    </th>
+                </tr>
+            </tbody>
+            
+            
+        </table>
+        <br><br>
+        <div id="colonne">
+            
+                
+                    <form onsubmit="ricerca(this);event.preventDefault();" class="ricerca">
+                          
+                            <br>
+                            <label>Processore   </label><input type="text" name="processore" placeholder="Processore..."><br><hr>
+                            <label>Ram   </label><input type="number" name="ram" placeholder="Ram..."><br><hr>
+                            <label>Memoria   </label><input type="number" name="memoria" placeholder="Memoria..."><br><hr>
+                            <button>Cerca</button>
+                            
+                            
+                        
+                    </form>
+               
+                
+
+            
+            <div id="risultatoRicerca">
+                <ul id="resultSearch">
+                    <li>yyy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

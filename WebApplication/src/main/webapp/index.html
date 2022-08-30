@@ -1,0 +1,33 @@
+ 
+<!--	Le pagine statiche (html, js, css...) vanno sotto webapp 
+	Il server ha letto il file web.xml e cercato tra i file statici
+	uno che aveva il nome inserito nella lista dell'xml
+	trovato index.html lo ha servito a chi ha contattato la mia applicazione
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mutuo Casa</title>
+</head>
+<body>
+	<h1>Mutuo Casa</h1>
+	<form action="Index" method="get">
+		<p>Prezzo A Metro Quadro</p>
+		<input type="number" name="prezzo">
+		<p>Metri Quadri</p>
+		<input type="number" name="metri">
+		<p>Numero Balconi</p>
+		<input type="number" name="balconi">
+		<p>Ha La Cantina?</p>
+		<input type="text" name="cantina">
+		<p>Numero Di Rate</p>
+		<input type="number" name="rate">
+		<br><br>
+		<button>Calcola</button>
+	</form>
+</body>
+</html>
+
+
+

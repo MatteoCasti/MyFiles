@@ -1,0 +1,27 @@
+<!-- 
+	Le pagine statiche (html, js, css...) vanno sotto webapp 
+	Il server ha letto il file web.xml e cercato tra i file statici
+	uno che aveva il nome inserito nella lista dell'xml
+	trovato index.html lo ha servito a chi ha contattato la mia applicazione
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vezio</title>
+</head>
+<body>
+	<h1>Calcolatore prezzo Vezio</h1>
+	<form action="Vezio" method="get">
+		<p>Residenza</p>
+		<input type="text" name="residenza">
+		<p>Età</p>
+		<input type="number" name="eta">
+		<br><br>
+		<button>Calcola</button>
+	</form>
+</body>
+</html>
+
+
+
